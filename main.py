@@ -50,7 +50,7 @@ while True:
     if index == -1:
       print(f"The song {song_title} is not in the set list.")
     else:
-      print(f"The song {song_title} is song number {index+1}")
+      print(f"The song {song_title} is song number {index}")
 
 
   # Option 5: Return the length of the playlist

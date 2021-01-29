@@ -32,6 +32,7 @@ class Playlist:
         return current_song
       counter += 1
       current_song = current_song.next
+    return counter
 
 
 
@@ -52,6 +53,7 @@ class Playlist:
     while current_node != None:
       counter += 1 
       current_node = current_node.next
+    return counter
 
   # TODO: Create a method called print_songs that prints a numbered list of the songs in the playlist.
 

@@ -61,7 +61,7 @@ class Playlist:
           print("Song Removed")
           return
           
-        previous_song = previous_song.set_next_song(current_song.next)
+        previous_song.next = current_song.next
         print("Song Removed Yo")
 
       return
@@ -91,6 +91,14 @@ class Playlist:
   # 3. Song Title 3
 
   def print_songs(self):
-    pass
+    current_song = self.__first_song
+    
+
+    while current_song != None:
+      print(current_song)
+      current_song = current_song.next
+
+
+
 
   

@@ -25,14 +25,18 @@ class Playlist:
 
   def find_song(self, title):
     current_song = self.__first_song
-    counter = 0
+    index = 0
 
     while current_song != None:
-      if current_song == title:
-        return current_song
-      counter += 1
-      current_song = current_song.next
-    return counter
+      if current_song.get_title() == title:
+        index += 1
+        return index
+      
+      if current_song.get_title() != title:
+        index += 1
+        current_song = current_song.next
+        
+      
 
 
 
